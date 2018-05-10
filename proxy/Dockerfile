@@ -1,0 +1,1 @@
+From gcr.io/runconduit/proxy:v0.4.1
