@@ -1,0 +1,1 @@
+From gcr.io/heptio-images/gimbal-discoverer:v0.2.0
