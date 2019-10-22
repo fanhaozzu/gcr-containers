@@ -1,1 +1,1 @@
-From gcr.io/runconduit/web:v0.4.1
+From k8s.gcr.io/metrics-server-amd64:v0.3.6
