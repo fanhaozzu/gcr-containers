@@ -13,7 +13,7 @@
 # limitations under the License.
 
 
-FROM private-registry.sohucs.com/domeos-pub/alpine:3.11 as builder
+FROM docker.io/fanhaozzu/alpine:3.11 as builder
 
 COPY . /
 
@@ -21,7 +21,7 @@ RUN apk add -U bash \
   && /build.sh
 
 # Use a multi-stage build
-FROM private-registry.sohucs.com/domeos-pub/alpine:3.11
+FROM docker.io/fanhaozzu/alpine:3.11
 
 ENV PATH=$PATH:/usr/local/luajit/bin:/usr/local/nginx/sbin:/usr/local/nginx/bin
 
