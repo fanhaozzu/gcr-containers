@@ -439,6 +439,9 @@ for PATCH in `ls /patches`;do
   patch -p1 < /patches/$PATCH
 done
 
+# modify nginx tips
+sed -i "s/nginx\//May the force be with you, DomeOS Team\//g" src/core/nginx.h
+
 WITH_FLAGS="--with-debug \
   --with-compat \
   --with-pcre-jit \
